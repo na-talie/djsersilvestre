@@ -1,0 +1,300 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: black;
+}
+
+img {
+  width: fit-content;
+  height: auto;
+}
+
+/* NAVIGATION: */
+
+.main-nav {
+  display: flex;
+  justify-content: space-evenly;
+  height: 55px;
+  width: 100%;
+  background-color: black;
+  /* border: 2px solid darkmagenta; */
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.main-nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  background-color: black;
+  border: 2px solid violet;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.main-nav a:hover {
+  border: 2px solid darkslateblue;
+  color: darkmagenta;
+  background-color: white;
+}
+
+/* PAGE: HOME */
+.home-section {
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid green; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./images/dj-crowd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 150vh;
+  background: white;
+}
+
+.welcome-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: white;
+  font-size: 25px;
+}
+
+/* ADD CSS ANIMATIONS: */
+.wrapper.six {
+  display: flex;
+  /* border: 2px solid darkmagenta; */
+  border-radius: 5px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: auto;
+  background-color: grey;
+}
+.flicker {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  margin: 5px auto;
+  color: #fffefe61;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#e6e6e6),
+      to(#1d1c1c),
+      color-stop(0.8, #ffffff)
+    )
+    no-repeat;
+  background: gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.8, #fff)
+    )
+    no-repeat;
+  background-size: 50px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: flick 1.5s infinite;
+}
+@keyframes flick {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+/* ALLE HEADLINES H2:_ */
+.page-headline {
+  display: flex;
+  /* border: 2px solid darkmagenta; */
+  border-radius: 5px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+  padding: 20px;
+  font-size: 25px;
+  color: white;
+  background-color: grey;
+}
+
+/* PAGE: ABOUT: */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 3px solid blue; */
+  padding: 5px;
+  height: 100vh;
+  background-image: url(./images/discokugeln.jpg);
+}
+
+.about-paragraph {
+  display: flex;
+  /* border: 2px solid darkmagenta; */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 2vh auto;
+  color: white;
+  background-color: grey;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+.about-gig-list {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid darkmagenta; */
+  border-radius: 5px;
+  padding: 25px;
+  padding-bottom: 1px;
+  color: white;
+  background-color: grey;
+}
+
+/* ADD BULLET POINTS AND SPACES IN BETWEEN: */
+
+ul {
+  list-style: disc;
+  margin: 1em 0;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+/* POSITION THE THREE BOXES EVENLY ACROSS THE PAGE: */
+.about-site ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.about-section > * {
+  margin: 0;
+}
+
+.about-section > .page-headline {
+  margin-top: 2vh;
+}
+
+.about-section > .about-paragraph {
+  margin-top: 1vh;
+}
+
+.about-section > .about-site {
+  margin-top: 1vh;
+}
+
+/* PAGE: MUSIC */
+.music-section {
+  background-image: url(./images/colorful-background-with-blurred-style.jpg);
+  padding: 5px;
+}
+
+.music-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid darkmagenta; */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 2vh auto;
+  width: 75%;
+  color: white;
+  background-color: grey;
+}
+
+.music-titles {
+  order: -1;
+}
+
+/* PAGE: CONTACT */
+.contact-section {
+  /* border: 3px solid green; */
+  /* Set the position of the contact section to absolute */
+  position: absolute;
+
+  /* Set the top property to the height of the nav element */
+  top: 100px;
+
+  /* Set the bottom, left, and right properties to 0 to make the section cover the whole website */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(./images/dj-equipment.jpg);
+}
+
+.contact-paragraph {
+  display: flex;
+  /* border: 2px solid darkmagenta; */
+  border-radius: 5px;
+  padding: 15px;
+  margin: 2vh auto;
+  justify-content: center;
+  text-align: center;
+  width: 75%;
+  color: white;
+  background-color: grey;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid green; */
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container i {
+  padding: 20px;
+  font-size: 5em;
+  color: #e130bb;
+  justify-content: center;
+  text-align: center;
+  margin: 2vh auto;
+}
+
+.icon-container a {
+  text-decoration: none;
+}
+
+.icon-container a:hover {
+  border: 2px solid darkslateblue;
+  border-radius: 5px;
+  color: rgb(139, 0, 116);
+  background-color: white;
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
